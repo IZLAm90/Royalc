@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="3"
+    android:layout_margin="10dp"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp">
+
+    <ImageView
+        android:id="@+id/Eventimage"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:src="@drawable/eve"
+        />
+    <TextView
+        android:id="@+id/evename"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/evedesc"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="datee"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/evedate"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/colordark"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        />
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

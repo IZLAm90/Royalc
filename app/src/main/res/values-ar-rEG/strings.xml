@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">النادى الملكي</string>
+    <string name="Home" translatable="true">الرايسيه</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="todo">TODO</string>
+    <string name="Event">ايفت</string>
+    <string name="Offer">العروض</string>
+    <string name="Menu">المنيو</string>
+    <string name="Rate">قيمنا</string>
+    <string name="Facbook">فيس بوك</string>
+    <string name="About">معلومات عنا</string>
+    <string name="Tabel">الترابيزات</string>
+    <string name="Location">المكان</string>
+    <string name="Eventname"> اسم الايفنت </string>
+    <string name="Eventdate">تاريخ الايفت</string>
+    <string name="Eventdesc">وصف الايفنت</string>
+    <string name="Profile">الملف الشخصي</string>
+    <string name="Setting">الاعدادات</string>
+    <string name="Logout">تسجيل الخروج</string>
+    <string name="Contact">تواصل معنا</string>
+
+</resources>

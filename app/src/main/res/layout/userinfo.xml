@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:hint="Name"
+        android:layout_height="wrap_content"
+       />
+
+    <TextView
+        android:textColor="@color/colordark"
+        android:layout_margin="20dp"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textSize="24dp"
+        android:text="The rate of clup"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ratecl"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textSize="24dp"
+        android:hint="Rate  clup"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="49dp" />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textview6"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textColor="@color/colordark"
+        android:textSize="24dp"
+        android:text="Rate the service"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="49dp" />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/rateser"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textSize="24dp"
+        android:hint="Rate service"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="49dp" />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textview7"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textColor="@color/colordark"
+        android:textSize="24dp"
+        android:text="Rate the app"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="49dp" />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/rateap"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textSize="24dp"
+        android:hint="Rate app"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="49dp" />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textview8"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textColor="@color/colordark"
+        android:textSize="24dp"
+        android:text="Feed back"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="49dp" />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/commen"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textSize="24dp"
+        android:hint="comment"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="49dp" />
+</LinearLayout>

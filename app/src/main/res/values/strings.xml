@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name" translatable="false">Royal</string>
+    <string name="Home" translatable="true">Home</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="todo">TODO</string>
+    <string name="Event">Event</string>
+    <string name="Offer">Offer</string>
+    <string name="Menu">Menu</string>
+    <string name="Rate">Rate Us</string>
+    <string name="Facbook">Facbook</string>
+    <string name="About">About As</string>
+    <string name="Tabel">Tabel</string>
+    <string name="Location">Location</string>
+    <string name="Eventname">Event Name</string>
+    <string name="Eventdate">Event Date</string>
+    <string name="Eventdesc">Event Description</string>
+    <string name="Profile">Profile</string>
+    <string name="Setting">Setting</string>
+    <string name="Logout">Log out</string>
+    <string name="Contact">contact us</string>
+
+
+
+
+</resources>

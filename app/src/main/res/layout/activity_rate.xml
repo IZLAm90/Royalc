@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    tools:context=".RateActivity"
+    tools:openDrawer="right">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorwhite"
+            android:fitsSystemWindows="true"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collaps"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:contentDescription="@string/Home"
+                android:fitsSystemWindows="true"
+                android:textAlignment="viewStart"
+                app:contentScrim="?attr/colorAccent"
+                app:expandedTitleMargin="5dp"
+                app:expandedTitleTextAppearance="@color/colorwhite"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sate_us2"
+                    />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarr"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:title="@string/app_name"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:id="@+id/fir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/backsign"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rate The Club "
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <RatingBar
+                    android:id="@+id/rateclub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#97CDF8"
+                    android:progressTint="#EFB300"
+                    android:rating="2.5"
+                    android:saveEnabled="true"
+                    android:soundEffectsEnabled="true"
+                    android:stepSize=".5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fir"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/backsign"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rate Service"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <RatingBar
+                    android:id="@+id/rateserv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#97CDF8"
+                    android:progressTint="#EFB300"
+                    android:rating="2.5"
+                    android:saveEnabled="true"
+                    android:soundEffectsEnabled="true"
+                    android:stepSize=".5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sac"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/backsign"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rate The app"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <RatingBar
+                    android:id="@+id/rateapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#97CDF8"
+                    android:progressTint="#EFB300"
+                    android:rating="2.5"
+                    android:saveEnabled="true"
+                    android:soundEffectsEnabled="true"
+                    android:stepSize=".5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/forr"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/ther"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/backim">
+                <EditText
+                    android:background="@drawable/backim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=" let your comment her"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/comment"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_below="@+id/forr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/setcomment"
+                android:text="doon"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@drawable/backblack"
+                />
+
+
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="#fff"
+        app:menu="@menu/menu_item" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+    <!--    android:progressTint="#FCC416"-->

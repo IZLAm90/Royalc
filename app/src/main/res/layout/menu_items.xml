@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="110dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/backsign"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowRadius="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backsign">
+
+        <ImageView
+            android:id="@+id/imgmenu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_mug" />
+
+        <TextView
+            android:id="@+id/menuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgmenu"
+            android:layout_marginStart="5dp"
+            android:hint="menu"
+            android:textColor="@color/colordark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menuprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menuname"
+            android:layout_marginStart="5dp"
+            android:hint="20$"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgmenu"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/menuprice"
+            android:src="@drawable/ic_circleun" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

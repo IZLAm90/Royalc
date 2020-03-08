@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+
+    tools:openDrawer="right">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collaps"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:contentDescription="@string/Home"
+                android:fitsSystemWindows="true"
+                android:textAlignment="viewStart"
+                app:contentScrim="?attr/colorAccent"
+                app:expandedTitleMargin="5dp"
+                app:expandedTitleTextAppearance="@color/colorwhite"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/masss3"
+
+                    />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarr"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:title="@string/app_name"
+                    android:padding="5dp"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+<!--        <TextView-->
+<!--            android:elevation="3dp"-->
+<!--            android:shadowDy="3"-->
+<!--            android:shadowDx="3"-->
+<!--            android:textSize="30sp"-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="230dp"-->
+<!--            android:background="@drawable/backim"-->
+<!--            android:text="Name Of user"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textStyle="bold" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="your point is "
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColorHint="@color/colordark"
+                android:textSize="20dp"
+                android:textColor="@color/colordark"
+                android:id="@+id/stars"
+                />
+            <TextView
+                android:id="@+id/starnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stars"
+                android:text="00"
+                android:textColor="@color/colordark"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+                android:id="@+id/transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/starnum"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Transfer Points"
+                android:textColor="@color/colorwhite"
+                android:textStyle="bold"
+                android:background="@drawable/backblack"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/transfer"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:text="Share The App"
+                android:textColor="@color/colorwhite"
+                android:textStyle="bold"
+                android:background="@drawable/backblack"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="#fff"
+        app:menu="@menu/menu_item" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

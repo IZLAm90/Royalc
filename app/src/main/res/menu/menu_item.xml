@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:visible="false"
+        android:title="Admin"
+        android:icon="@drawable/ic_home_b"
+        android:id="@+id/admin"
+
+        />
+    <item
+        android:icon="@drawable/ic_home_b"
+        android:id="@+id/home"
+        android:title="@string/Home"
+        app:showAsAction="withText"
+        />
+    <item
+        android:icon="@drawable/ic_account"
+        android:id="@+id/profile"
+        android:title="@string/Profile"
+        app:showAsAction="withText"
+
+        />
+    <item
+        android:icon="@drawable/ic_event_b"
+        android:id="@+id/offer"
+        app:showAsAction="withText"
+        android:title="@string/Offer"/>
+
+    <item
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_tabel_b"
+        android:id="@+id/table"
+        android:title="@string/Tabel"/>
+    <item
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_people_o"
+        android:id="@+id/about"
+        android:title="@string/About"/>
+    <item
+        app:showAsAction="withText"
+        android:title="@string/Setting"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_b"
+        />
+    <item
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_location_o"
+        android:id="@+id/location"
+        android:title="@string/Location"/>
+    <item
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_close_b"
+        android:id="@+id/logout"
+        android:title="@string/Logout"/>
+    <item
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_contact_phone"
+        android:id="@+id/contact"
+        android:title="@string/Contact"/>
+</menu>
